@@ -10,7 +10,6 @@
 import_jhu_data <- function(type){
 
   stopifnot(length(type) != 0 & type %in% c("cases", "recoveries", "deaths"))
-  case_type <- type
 
   # Select the type of data to pull
   type <- dplyr::case_when(type == "cases" ~ tsCases,
