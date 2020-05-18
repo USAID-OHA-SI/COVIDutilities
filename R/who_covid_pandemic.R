@@ -7,7 +7,7 @@ who_pandemic <- function() {
   df <- tibble::tribble(
     ~date,        ~measure,
     "2020-03-11", "WHO declares COVID-19 Pandemic") %>%
-    mutate(date = as.Date(date))
+    dplyr::mutate(date = as.Date(date))
   return(df)
 }
 

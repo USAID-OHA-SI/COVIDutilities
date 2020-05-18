@@ -6,6 +6,9 @@
 \usage{
 reshape_jhu_covid(df)
 }
+\arguments{
+\item{df}{data frame upon which the reshape is to be conducted}
+}
 \description{
 Pivots JHU COVID-19 data from wide to long format. Creates daily cases. Used in pull_jhu_covid.a
 }

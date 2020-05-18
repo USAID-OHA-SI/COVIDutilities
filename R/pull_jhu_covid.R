@@ -19,8 +19,8 @@ pull_jhu_covid <- function() {
   recover <- import_jhu_data("recoveries")
   deaths <- import_jhu_data("deaths")
 
-  df <- dplyr::left_join(cases, recover) %>%
-    dplyr::left_join(., deaths) %>%
+  df <- dplyr::left_join(cases, recover %>% dplyr::rename(recoveries = cases, daily_recoveries = daily_cases)) %>%
+    dplyr::left_join(deaths %>% dplyr::rename(deaths = cases, daily_deaths = daily_cases)) %>%
     dplyr::arrange(countryname, date) %>%
     dplyr::group_by(countryname) %>%
     dplyr::mutate(first_case = first_time_flag(cases, 1),

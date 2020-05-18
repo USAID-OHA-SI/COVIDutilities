@@ -20,11 +20,5 @@ import_jhu_data <- function(type){
   df <- vroom::vroom(file.path(paste0(jhuRepo, type)))
   df <- reshape_jhu_covid(df)
 
-  # Rename cases when they are recoveries or deaths
-  if(case_type == "recoveries")
-    df <- dplyr::rename(df, recoveries = cases, daily_recoveries = daily_cases)
-
-  if(case_type == "deaths")
-    df <- dplyr::rename(df, deaths = cases, daily_deaths = daily_cases)
 }
 
