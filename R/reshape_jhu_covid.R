@@ -3,6 +3,7 @@
 #' @name reshape_jhu_covid
 #' @description Pivots JHU COVID-19 data from wide to long format. Creates daily cases. Used in pull_jhu_covid.a
 #' @export
+#' @ImportFrom stats lag
 #' 
 #'
 
