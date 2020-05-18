@@ -7,7 +7,7 @@
 reshape_jhu_covid(df)
 }
 \description{
-Pivots JHU COVID-19 data from wide to long format. Creates daily cases. Used in pull_jhu_covid.
+Pivots JHU COVID-19 data from wide to long format. Creates daily cases. Used in pull_jhu_covid.a
 }
 \details{
 Function to reshape Covid-19 data from Johns Hopkins github repo

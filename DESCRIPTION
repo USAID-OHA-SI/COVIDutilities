@@ -1,0 +1,22 @@
+Package: COVIDutilities
+Title: Pulls and Returns Tidy COVID-19 Data 
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Tim", "Essam", ,"tessam@usaid.gov", c("aut", "cre")),
+    person("Aaron", "Chafetz", ,"achafetz@usaid.gov", c("aut")),
+    person("Baboyma", "Kagniniwa", ,"bkagniniwa@usaid.gov ", c("aut"))
+    )
+Description: What the package does (one paragraph).
+URL: https://github.com/USAID-OHA-SI/COVIDutilities
+BugReports: https://github.com/USAID-OHA-SI/COVIDutilities/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Imports:
+  magrittr,
+  dplyr,
+  tidyr,
+  vroom,
+  tibble

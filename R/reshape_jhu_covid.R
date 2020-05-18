@@ -2,6 +2,7 @@
 #' @title Reshape JHU data
 #' @name reshape_jhu_covid
 #' @description Pivots JHU COVID-19 data from wide to long format. Creates daily cases. Used in pull_jhu_covid.a
+#' @export
 #' 
 #'
 
@@ -24,5 +25,4 @@ reshape_jhu_covid <- function(df) {
     dplyr::group_by(countryname) %>%
     dplyr::mutate(daily_cases = cases - lag(cases)) %>%
     dplyr::ungroup()
- return(df)
 }

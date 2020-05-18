@@ -6,6 +6,11 @@
 \usage{
 first_time_flag(var, value)
 }
+\arguments{
+\item{var}{column name on which you wish to run funciton}
+
+\item{value}{value for which you are searching for first occurence}
+}
 \description{
 Returns an indicator variable for the first time a condition is met in a dataframe.
 USeful for tagging when an event started or ended in a panel dataset.

@@ -12,3 +12,8 @@ import_jhu_data(type)
 \description{
 Import John's Hopkins COVID-19 data
 }
+\examples{
+\dontrun{
+cases <- import_jhu("cases")
+}
+}
