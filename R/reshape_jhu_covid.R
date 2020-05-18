@@ -12,7 +12,7 @@
 
 
 reshape_jhu_covid <- function(df) {
-  df %>%
+  df <- df %>%
     tidyr::pivot_longer(-c(1:4),
                  names_to = "date",
                  values_to = "cases") %>%
