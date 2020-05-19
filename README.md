@@ -1,6 +1,9 @@
 
 # COVIDutilities
 
+  <!-- badges: start -->
+  [![Travis build status](https://travis-ci.com/USAID-OHA-SI/COVIDutilities.svg?branch=master)](https://travis-ci.com/USAID-OHA-SI/COVIDutilities)
+  <!-- badges: end -->
 
 
 ## Overview
