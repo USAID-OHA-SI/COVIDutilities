@@ -8,7 +8,7 @@
 
 ## Overview
 
-With COVID-19 increasingly affecting many of the operating units in which PEPFAR operates, it is imperative to be able to pull daily COVID-19 datasets. This package automates many of these data fetching exercises and standardizes the COVID-19 data to be compatible with other PEPFER dataset. The package primarily extracts data from the Johns Hopkins COVID-19 github repo. Focal users are analysts in USAID/GH/OHA who are using R to pull and/or wrangle COVID-19 data for bumping up against relevant PEPFAR indicators.
+With COVID-19 increasingly affecting many of the operating units in which PEPFAR operates, it is imperative to be able to pull daily COVID-19 datasets. This package automates many of these data fetching exercises and standardizes the COVID-19 data to be compatible with other PEPFER dataset. The package primarily extracts data from the Johns Hopkins COVID-19 github repo. Focal users are analysts in USAID/GH/OHA who are using R to pull and/or wrangle COVID-19 data for bumping up against relevant PEPFAR indicators.  
 
 
 ## Installation
