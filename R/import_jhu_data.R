@@ -16,7 +16,7 @@ import_jhu_data <- function(type){
                            type == "recoveries" ~ tsRecov,
                            type == "deaths" ~ tsDeaths)
 
-  df <- vroom::vroom(file.path(paste0(jhuRepo, type)))
+  df <- readr::read_csv(file.path(paste0(jhuRepo, type)))
   df <- reshape_jhu_covid(df)
 
 }

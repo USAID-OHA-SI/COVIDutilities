@@ -18,6 +18,6 @@ Imports:
   magrittr,
   dplyr,
   tidyr,
-  vroom,
+  readr,
   tibble,
   stats
