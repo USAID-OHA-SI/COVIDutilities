@@ -26,5 +26,7 @@ import_jhu_data <- function(type){
   
   if(type == "deaths")
     df <- dplyr::rename(df, deaths = cases, daily_deaths = daily_cases)
+  
+  return(df)
 }
 
