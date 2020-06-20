@@ -21,5 +21,10 @@ import_jhu_data <- function(type){
                                                                         `Country/Region` = "c"))
   df <- reshape_jhu_covid(df)
 
+  if(type == "recoveries")
+    df <- dplyr::rename(df, recoveries = cases, daily_recoveries = daily_cases)
+  
+  if(type == "deaths")
+    df <- dplyr::rename(df, deaths = cases, daily_deaths = daily_cases)
 }
 
