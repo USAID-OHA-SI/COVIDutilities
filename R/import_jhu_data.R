@@ -16,7 +16,9 @@ import_jhu_data <- function(type){
                            type == "recoveries" ~ tsRecov,
                            type == "deaths" ~ tsDeaths)
 
-  df <- readr::read_csv(file.path(paste0(jhuRepo, type)))
+  df <- readr::read_csv(file.path(paste0(jhuRepo, type)), col_types = c(.default = "d",
+                                                                        `Province/State` = "c",
+                                                                        `Country/Region` = "c"))
   df <- reshape_jhu_covid(df)
 
 }
