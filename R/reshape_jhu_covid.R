@@ -23,7 +23,7 @@ reshape_jhu_covid <- function(df) {
     dplyr::ungroup() %>%
     dplyr::arrange(countryname, date) %>%
     dplyr::group_by(countryname) %>%
-    dplyr::mutate(daily_cases = cases - stats::lag(cases)) %>%
+    dplyr::mutate(daily_cases = cases - dplyr::lag(cases, order_by = date)) %>%
     dplyr::ungroup()
   return(df)
 }
