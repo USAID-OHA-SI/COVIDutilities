@@ -31,4 +31,10 @@ hdx_govmes_url <- "https://data.humdata.org/dataset/acaps-covid19-government-mea
 #' @example 
 #' \dontrun{
 #' glamr::extract_excel_data(hdx_govmes_url, hdx_govmes_url, 2, 'xlsx') }
-hdx_govmes_linkid <- "a[class='btn btn-empty btn-empty-blue hdx-btn resource-url-analytics ga-download']"
+hdx_govmes_linkid <- "a[class='btn btn-empty btn-empty-blue hdx-btn resource-url-analytics ga-download']"#' 
+
+#' @export
+#' @title  OWID vaccination home
+#' @description link to vaccination data main folder
+owid_vax_url <- "https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations/country_data/"
+
