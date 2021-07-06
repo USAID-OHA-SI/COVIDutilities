@@ -2,7 +2,7 @@
 # COVIDutilities
 
   <!-- badges: start -->
-  [![Travis build status](https://travis-ci.com/USAID-OHA-SI/COVIDutilities.svg?branch=master)](https://travis-ci.com/USAID-OHA-SI/COVIDutilities)
+  [![R-CMD-check](https://github.com/USAID-OHA-SI/COVIDutilities/workflows/R-CMD-check/badge.svg)](https://github.com/USAID-OHA-SI/COVIDutilities/actions)
   <!-- badges: end -->
 
 
