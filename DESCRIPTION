@@ -25,3 +25,6 @@ Imports:
   rvest,
   stringr,
   xml2
+Suggests: 
+    spelling
+Language: en-US
