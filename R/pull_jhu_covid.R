@@ -4,7 +4,7 @@
 #' COVID-19 confirmed cases, recoveries and deaths.
 #' @export
 #'
-#' @example
+#' @examples
 #' \dontrun{
 #' covoid_data <- pull_jhu_covid
 #' names(covid_data) }

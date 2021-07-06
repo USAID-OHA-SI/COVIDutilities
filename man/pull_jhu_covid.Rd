@@ -13,3 +13,9 @@ COVID-19 confirmed cases, recoveries and deaths.
 \details{
 Pull a tidy version of JHU COVID-19 data
 }
+\examples{
+\dontrun{
+covoid_data <- pull_jhu_covid
+names(covid_data) }
+
+}

@@ -28,7 +28,7 @@ hdx_govmes_url <- "https://data.humdata.org/dataset/acaps-covid19-government-mea
 #' @export
 #' @title HDX COVID-19 government measures linkid for parsing
 #' @description Excel file of government measures taken by diffferent countries
-#' @example 
+#' @examples 
 #' \dontrun{
 #' glamr::extract_excel_data(hdx_govmes_url, hdx_govmes_url, 2, 'xlsx') }
 hdx_govmes_linkid <- "a[class='btn btn-empty btn-empty-blue hdx-btn resource-url-analytics ga-download']"#' 

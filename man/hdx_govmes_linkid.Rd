@@ -13,4 +13,8 @@ hdx_govmes_linkid
 \description{
 Excel file of government measures taken by diffferent countries
 }
+\examples{
+\dontrun{
+glamr::extract_excel_data(hdx_govmes_url, hdx_govmes_url, 2, 'xlsx') }
+}
 \keyword{datasets}

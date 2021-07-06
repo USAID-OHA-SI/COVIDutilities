@@ -18,11 +18,13 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup, echo = F}
+```{r setup, echo = F, }
 # Load the packages needed to fetch and plot the COVID-19 data
 library(COVIDutilities)
-library(tidyverse)
-library(glitr)
+library(ggplot2)
+library(magrittr)
+library(dplyr)
+library(scales)
 ```
 
 ### Introduction
@@ -44,7 +46,7 @@ cat(paste("\n", "Number of countries with vaccine data available: ", length(cntr
 With a valid list of countries, we can turn our attention to extracting a data frame with the actual vaccine data. To accomplish this we will make use of the `get_vax_data()` function. The function requires a character object
 
 ```{r get vaccine data}
-# Fetch all vaccine data 
+# Fetch all vaccine data (takes a bit to run)
 df_vax <- get_vax_data(cntry_list)
 
 glimpse(df_vax)
@@ -63,14 +65,14 @@ We can plot the data it to get a sense of what is going on in each country.
 ```{r plot vaccines, warning = F, dpi = 90}
 df_vax_pepfar %>% 
   ggplot(aes(x = date)) +
-  geom_area(aes(y = people_vaccinated), fill = genoa_light) +
-  geom_area(aes(y = people_fully_vaccinated), fill = genoa) +
-  scale_y_continuous(labels = scales::label_number_si()) +
+  geom_area(aes(y = people_vaccinated), fill = "#7ecfc0") +
+  geom_area(aes(y = people_fully_vaccinated), fill = "#287c6f") +
+  scale_y_continuous(labels = label_number_si()) +
     facet_wrap(~countryname, scales = "free_y") +
   coord_cartesian(expand = F) +
   labs(x = "", y ="", title = "Vaccination summary",
        caption = "Source: Our World In Data COVID-19 Vaccine data") +
-  si_style_ygrid() +
+  theme_minimal() +
   theme(panel.spacing = unit(0.5, "lines"))
 
 ```
