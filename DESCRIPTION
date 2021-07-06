@@ -26,7 +26,8 @@ Imports:
   stringr,
   xml2,
   scales,
-  ggplot2
+  ggplot2,
+  markdown
 Suggests: 
     rmarkdown,
     knitr,
