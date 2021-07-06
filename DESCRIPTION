@@ -26,5 +26,8 @@ Imports:
   stringr,
   xml2
 Suggests: 
+    rmarkdown,
+    knitr,
     spelling
 Language: en-US
+VignetteBuilder: knitr
