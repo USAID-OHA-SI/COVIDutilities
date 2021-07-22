@@ -1,6 +1,6 @@
 Package: COVIDutilities
 Title: Pulls and Returns Tidy COVID-19 Data 
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: c(
     person("Tim", "Essam", ,"tessam@usaid.gov", c("aut", "cre")),
     person("Aaron", "Chafetz", ,"achafetz@usaid.gov", c("aut")),
