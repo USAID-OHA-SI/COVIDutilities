@@ -15,19 +15,20 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports:
-  magrittr,
-  dplyr,
-  tidyr,
-  readr,
-  tibble,
-  stats, 
-  purrr,
-  rvest,
-  stringr,
-  xml2,
-  scales,
-  ggplot2,
-  markdown
+    magrittr,
+    dplyr,
+    tidyr,
+    readr,
+    tibble,
+    stats,
+    purrr,
+    rvest,
+    stringr,
+    xml2,
+    scales,
+    ggplot2,
+    markdown,
+    zoo
 Suggests: 
     rmarkdown,
     knitr,

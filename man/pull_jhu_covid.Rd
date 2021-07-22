@@ -4,7 +4,10 @@
 \alias{pull_jhu_covid}
 \title{Pull JHU Covid-19 Data}
 \usage{
-pull_jhu_covid()
+pull_jhu_covid(pepfar_only = TRUE)
+}
+\arguments{
+\item{pepfar_only}{limit to just PEPFAR countries, default = TRUE}
 }
 \description{
 Returns a tidy data frame of JHU COVID-19 data. Returns data frame with colums for
@@ -15,7 +18,6 @@ Pull a tidy version of JHU COVID-19 data
 }
 \examples{
 \dontrun{
-covoid_data <- pull_jhu_covid
-names(covid_data) }
+covid_data <- pull_jhu_covid() }
 
 }
