@@ -38,3 +38,9 @@ hdx_govmes_linkid <- "a[class='btn btn-empty btn-empty-blue hdx-btn resource-url
 #' @description link to vaccination data main folder
 owid_vax_url <- "https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations/country_data/"
 
+#' Oxford COVID-19 Government Response Tracker (Stringency Index)
+#' 
+#' @export
+#' @title  Oxford COVID-19 Stringency Index
+#' @description API base 
+oxford_url <- "https://covidtrackerapi.bsg.ox.ac.uk"
