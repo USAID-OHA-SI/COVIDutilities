@@ -1,6 +1,6 @@
 #' Helper function to create html strings needed for loop
 #' @param x countryname that you want to create url for (ends in .csv)
-#' @export 
+#'
 #' @examples
 #' \dontrun{
 #' test_url <- function(x = "Zambia")

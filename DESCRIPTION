@@ -1,6 +1,6 @@
 Package: COVIDutilities
 Title: Pulls and Returns Tidy COVID-19 Data 
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: c(
     person("Tim", "Essam", ,"tessam@usaid.gov", c("aut", "cre")),
     person("Aaron", "Chafetz", ,"achafetz@usaid.gov", c("aut")),
@@ -15,22 +15,25 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports:
-  magrittr,
-  dplyr,
-  tidyr,
-  readr,
-  tibble,
-  stats, 
-  purrr,
-  rvest,
-  stringr,
-  xml2,
-  scales,
-  ggplot2,
-  markdown
+    magrittr,
+    dplyr,
+    tidyr,
+    readr,
+    tibble,
+    stats,
+    purrr,
+    rvest,
+    stringr,
+    xml2,
+    scales,
+    ggplot2,
+    markdown,
+    zoo
 Suggests: 
     rmarkdown,
     knitr,
     spelling
 Language: en-US
 VignetteBuilder: knitr
+Depends: 
+    R (>= 2.10)

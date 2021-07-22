@@ -1,19 +1,17 @@
 #' Pull a tidy version of JHU COVID-19 data
+#'
+#'
 #' @title Pull JHU Covid-19 Data
 #' @description Returns a tidy data frame of JHU COVID-19 data. Returns data frame with colums for
 #' COVID-19 confirmed cases, recoveries and deaths.
+#' @param pepfar_only limit to just PEPFAR countries, default = TRUE
 #' @export
 #'
 #' @examples
 #' \dontrun{
-#' covoid_data <- pull_jhu_covid
-#' names(covid_data) }
+#' covid_data <- pull_jhu_covid() }
 #'
-
-
-# Pull John Hopkin's COVID-19 Data, munge it, and widen it as casese, recoveries, deaths
-
-pull_jhu_covid <- function() {
+pull_jhu_covid <- function(pepfar_only = TRUE) {
 
   cases <- import_jhu_data("cases")
   recover <- import_jhu_data("recoveries")
@@ -29,10 +27,17 @@ pull_jhu_covid <- function() {
            tenth_death = dplyr::if_else(deaths >= 10, 1, 0)) %>%
     dplyr::arrange(countryname, date) %>%
     dplyr::group_by(countryname) %>%
-    dplyr::mutate(days_since_ten_case = cumsum(tenth_case),
-           days_since_ten_death = cumsum(tenth_death),
-           who_pandemic = dplyr::if_else(date == "2020-03-11", "WHO declares COVID-19 Pandemic", NULL)) %>%
+    dplyr::mutate(rollingavg_7day = zoo::rollmean(daily_cases, 7, fill = NA, align = c("right")),
+                  days_since_ten_case = cumsum(tenth_case),
+                  days_since_ten_death = cumsum(tenth_death),
+                  who_pandemic = dplyr::if_else(date == "2020-03-11", "WHO declares COVID-19 Pandemic", NULL)) %>%
     dplyr::ungroup()
+  
+  if(pepfar_only == TRUE){
+    df <- right_join(df, pepfar_iso_map)
+  }
+     
+  
   return(df)
 }
 
