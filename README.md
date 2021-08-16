@@ -1,5 +1,5 @@
 
-# COVIDutilities
+# COVIDutilities <img src='man/figures/logo.png' align="right" height="120" />
 
   <!-- badges: start -->
   [![R-CMD-check](https://github.com/USAID-OHA-SI/COVIDutilities/workflows/R-CMD-check/badge.svg)](https://github.com/USAID-OHA-SI/COVIDutilities/actions)
