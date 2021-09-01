@@ -1,4 +1,5 @@
 # COVIDutilities 1.1.0
+* build site via `pkgdown`
 * created the `using-covid-data` vignette to demonstrate importing COVID data and the stringency index.
 * rename `get_vax_data` to `pull_vax_data` to match other functions.
 * add `pull_covid_gov_measures` to pull in HDX COVID government measures.

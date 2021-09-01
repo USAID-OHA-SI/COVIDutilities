@@ -3,5 +3,6 @@ pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   How-to-fetch-COVID-vaccine-data: How-to-fetch-COVID-vaccine-data.html
-last_built: 2021-09-01T20:06Z
+  using-covid-data: using-covid-data.html
+last_built: 2021-09-01T20:59Z
 
