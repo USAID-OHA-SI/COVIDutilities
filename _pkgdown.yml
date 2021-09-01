@@ -28,21 +28,19 @@ navbar:
         href: articles/How-to-fetch-COVID-vaccine-data.html
 
 reference:
-- title: All functions
+- title: Import COVID Related Data
   contents:
-  - '`get_vax_countries`'
-  - '`get_vax_data`'
-  - '`hdx_govmes_linkid`'
-  - '`hdx_govmes_url`'
-  - '`jhuRepo`'
-  - '`owid_vax_url`'
-  - '`oxford_url`'
-  - '`pepfar_iso_map`'
-  - '`pull_covid_gov_measures`'
   - '`pull_jhu_covid`'
   - '`pull_stringency_index`'
-  - '`tsCases`'
-  - '`tsDeaths`'
-  - '`tsRecov`'
+  - '`pull_vax_data`'
+  - '`pull_covid_gov_measures`'
+  
+- title: Helper Functions
+  contents:
+  - '`get_vax_countries`'
+  
+- title: Data
+  contents:
+  - '`pepfar_iso_map`'
   - '`who_pandemic`'
 

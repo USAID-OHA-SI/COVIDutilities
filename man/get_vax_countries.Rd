@@ -29,6 +29,6 @@ Import Our World in Data Vaccine rates
 }
 \seealso{
 Other vax: 
-\code{\link{get_vax_data}()}
+\code{\link{pull_vax_data}()}
 }
 \concept{vax}

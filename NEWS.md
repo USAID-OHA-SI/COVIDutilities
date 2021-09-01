@@ -1,7 +1,8 @@
 # COVIDutilities 1.1.0
+* rename `get_vax_data` to `pull_vax_data` to match other functions.
 * add `pull_covid_gov_measures` to pull in HDX COVID government measures.
 * change default option to `get_vax_countries` to only return PEPFAR countries.
-* `get_vax_data` converts country names to match PEPFAR ones where applicable. 
+* `pull_vax_data` converts country names to match PEPFAR ones where applicable. 
 * clean up exports, removing COVID related urls and background supporting functions.
 * give user option to look at more than PEPFAR only countries in`pull_stringency_index`.
 

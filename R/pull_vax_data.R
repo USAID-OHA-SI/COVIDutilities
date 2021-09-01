@@ -17,10 +17,8 @@
 #'   cntry_list <- get_vax_countries(pepfar_only = FALSE)
 #'   df_vax <- get_vax_data(cntry_list)
 #' }
-
-
-# Pull and compress list of ous into a dataframe
-get_vax_data <- function(cntry){
+#' 
+pull_vax_data <- function(cntry){
   
   tryCatch(
     {
@@ -43,4 +41,19 @@ get_vax_data <- function(cntry){
     
 }
 
-try
+#' Import OWID vaccine data
+#' @title Fetch Our World In Data vaccine data
+#' @description Retrieves COVID-19 vaccination data for a given list of countries
+#' @param cntry country, or list of countries, that appear in the our world in 
+#'   data page
+#' @return Returns data frame of total vaccinations by day  
+#' @export 
+
+get_vax_data <- function(cntry){
+  
+ .Deprecated("pull_vax_data")
+  
+  pull_vax_data(cntry)
+}
+
+
