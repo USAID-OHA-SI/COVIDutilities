@@ -20,10 +20,11 @@ Import Our World in Data Vaccine rates
 \examples{
 \dontrun{
 #all countries
-  cntry_list <- get_vax_countries()
+  cntry_list <- get_vax_countries(pepfar_only = FALSE)
   df_vax <- get_vax_data(cntry_list)
 #pepfar only countries
   cntry_list <- get_vax_countries()
+  df_vax_pepfar <- get_vax_data(cntry_list)
 }
 }
 \seealso{
