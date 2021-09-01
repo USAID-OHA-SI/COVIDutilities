@@ -2,7 +2,7 @@
 % Please edit documentation in R/pull_jhu_covid.R
 \name{pull_jhu_covid}
 \alias{pull_jhu_covid}
-\title{Pull JHU Covid-19 Data}
+\title{Pull JHU COVID-19 Case, Recovery, and Death Data}
 \usage{
 pull_jhu_covid(pepfar_only = TRUE)
 }
@@ -10,11 +10,8 @@ pull_jhu_covid(pepfar_only = TRUE)
 \item{pepfar_only}{limit to just PEPFAR countries, default = TRUE}
 }
 \description{
-Returns a tidy data frame of JHU COVID-19 data. Returns data frame with colums for
-COVID-19 confirmed cases, recoveries and deaths.
-}
-\details{
-Pull a tidy version of JHU COVID-19 data
+\%>\% Returns a tidy data frame of JHU COVID-19 data. Returns a tidy
+data frame with columns for COVID-19 confirmed cases, recoveries and deaths.
 }
 \examples{
 \dontrun{
