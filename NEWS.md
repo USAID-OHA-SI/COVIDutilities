@@ -1,3 +1,5 @@
+# COVIDutilities 1.1.0
+
 # COVIDutilities 1.0.0
 * add `pull_stringency_index()` to pull Oxford stringency data
 * add `get_vax_data()`  to fetch COVID-19 vaccine data from Our World In Data Github Repo.
