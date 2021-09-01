@@ -1,5 +1,6 @@
 ---
 title: "Accesing and Utilizing COVID Data"
+author: Aaron Chafetz
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Accesing and Utilizing COVID Data}
