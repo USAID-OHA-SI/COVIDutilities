@@ -26,6 +26,8 @@ navbar:
       menu:
       - text: How to fetch COVID vaccine data
         href: articles/How-to-fetch-COVID-vaccine-data.html
+      - text: Accesing and Utilizing COVID Data
+        href: articles/using-covid-data.html
 
 reference:
 - title: Import COVID Related Data
