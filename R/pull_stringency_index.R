@@ -13,6 +13,8 @@
 #'
 #' @return dataframe of all PEPFAR countries and their stringency index value by day
 #' @export
+#' 
+#' @source \url{https://covidtracker.bsg.ox.ac.uk/about-api}
 #'
 #' @examples
 #' \dontrun{

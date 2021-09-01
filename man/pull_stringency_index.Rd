@@ -3,6 +3,9 @@
 \name{pull_stringency_index}
 \alias{pull_stringency_index}
 \title{Pull Oxford Stringency Index}
+\source{
+\url{https://covidtracker.bsg.ox.ac.uk/about-api}
+}
 \usage{
 pull_stringency_index(
   date_start = "2020-01-22",

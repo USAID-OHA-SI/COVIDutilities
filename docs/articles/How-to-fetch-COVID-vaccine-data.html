@@ -132,6 +132,9 @@
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Fetch all vaccine data (takes a bit to run)</span>
 <span class="va">df_vax</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_vax_data.html">get_vax_data</a></span><span class="op">(</span><span class="va">cntry_list</span><span class="op">)</span>
+<span class="co">#&gt; Warning: 'get_vax_data' is deprecated.</span>
+<span class="co">#&gt; Use 'pull_vax_data' instead.</span>
+<span class="co">#&gt; See help("Deprecated")</span>
 
 <span class="fu">glimpse</span><span class="op">(</span><span class="va">df_vax</span><span class="op">)</span>
 <span class="co">#&gt; Rows: 5,676</span>
@@ -147,6 +150,9 @@
 <p>In some circumstances you may not need every country available. To extract a number of PEPFAR countries you can pass an object list of the country name.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">df_vax_pepfar</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_vax_data.html">get_vax_data</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Zambia"</span>, <span class="st">"Nigeria"</span>, <span class="st">"South Africa"</span>, <span class="st">"Malawi"</span>, <span class="st">"Mozambique"</span>, <span class="st">"Zimbabwe"</span>, <span class="st">"Botswana"</span>, <span class="st">"United States"</span><span class="op">)</span>, <span class="st">"csv"</span>, sep <span class="op">=</span> <span class="st">"."</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; Warning: 'get_vax_data' is deprecated.</span>
+<span class="co">#&gt; Use 'pull_vax_data' instead.</span>
+<span class="co">#&gt; See help("Deprecated")</span>
 <span class="fu">glimpse</span><span class="op">(</span><span class="va">df_vax_pepfar</span><span class="op">)</span>
 <span class="co">#&gt; Rows: 862</span>
 <span class="co">#&gt; Columns: 8</span>

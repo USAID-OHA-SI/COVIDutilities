@@ -5,6 +5,7 @@
 #'   data page
 #' @family vax
 #' @return Returns data frame of total vaccinations by day  
+#' @source \url{https://github.com/owid/covid-19-data}
 #' @export 
 #' @examples
 #' \dontrun{

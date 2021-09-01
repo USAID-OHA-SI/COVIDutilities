@@ -5,6 +5,7 @@
 #' @return Returns an object of the countries being tracked by Our World in Data
 #' @param pepfar_only pepfar_only limit to just PEPFAR countries, default = TRUE
 #' @export 
+#' @source \url{https://github.com/owid/covid-19-data}
 #' @family vax
 #' @examples
 #' \dontrun{

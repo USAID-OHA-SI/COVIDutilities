@@ -3,6 +3,9 @@
 \name{pull_vax_data}
 \alias{pull_vax_data}
 \title{Fetch Our World In Data vaccine data}
+\source{
+\url{https://github.com/owid/covid-19-data}
+}
 \usage{
 pull_vax_data(cntry)
 }

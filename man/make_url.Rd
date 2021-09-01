@@ -14,7 +14,7 @@ Helper function to create html strings needed for loop
 }
 \examples{
 \dontrun{
-test_url <- function(x = "Zambia")
+test_url <- make_url(x = "Zambia")
 }
 }
 \keyword{internal}

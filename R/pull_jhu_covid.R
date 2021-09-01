@@ -5,6 +5,8 @@
 #' 
 #' @param pepfar_only limit to just PEPFAR countries, default = TRUE
 #' @export
+#' 
+#' @source \url{https://github.com/CSSEGISandData/COVID-19/}
 #'
 #' @examples
 #' \dontrun{

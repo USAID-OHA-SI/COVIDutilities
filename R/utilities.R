@@ -3,7 +3,7 @@
 #' @keywords internal
 #' @examples
 #' \dontrun{
-#' test_url <- function(x = "Zambia")
+#' test_url <- make_url(x = "Zambia")
 #' }
 
 make_url <- function(x) {

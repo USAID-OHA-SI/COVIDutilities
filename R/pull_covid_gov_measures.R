@@ -9,7 +9,9 @@
 #' 
 #' @param pepfar_only limit to just PEPFAR countries, default = TRUE
 #' @param natl_lvl_only limit data to national level, default = TRUE 
-#'
+#' 
+#' @source \url{https://data.humdata.org/dataset/acaps-covid19-government-measures-dataset}
+#' 
 #' @return dataframe of countries and their types of government interventions
 #'  by day
 #' @export

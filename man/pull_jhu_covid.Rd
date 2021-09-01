@@ -3,6 +3,9 @@
 \name{pull_jhu_covid}
 \alias{pull_jhu_covid}
 \title{Pull JHU COVID-19 Case, Recovery, and Death Data}
+\source{
+\url{https://github.com/CSSEGISandData/COVID-19/}
+}
 \usage{
 pull_jhu_covid(pepfar_only = TRUE)
 }

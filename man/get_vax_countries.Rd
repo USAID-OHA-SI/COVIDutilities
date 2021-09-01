@@ -5,6 +5,9 @@
 \title{Import Our World in Data Vaccine rates
 
 Pull list of countries for which vax data exist}
+\source{
+\url{https://github.com/owid/covid-19-data}
+}
 \usage{
 get_vax_countries(pepfar_only = TRUE)
 }

@@ -3,6 +3,9 @@
 \name{pull_covid_gov_measures}
 \alias{pull_covid_gov_measures}
 \title{Pull HDX COVID Government Measures data}
+\source{
+\url{https://data.humdata.org/dataset/acaps-covid19-government-measures-dataset}
+}
 \usage{
 pull_covid_gov_measures(natl_lvl_only = TRUE, pepfar_only = TRUE)
 }
