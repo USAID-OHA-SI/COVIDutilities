@@ -19,6 +19,7 @@ make_url <- function(x) {
 
 #' Helper function to check if list of countries needs .csv added at the end or not
 #' @param x object to which you want to add .csv to the end of
+#' @keywords internal
 #' @export 
 #' @examples
 #' \dontrun{
@@ -28,3 +29,19 @@ make_url <- function(x) {
 add_csv_stub <- function(x) {
   ifelse(endsWith(x, ".csv"), x, paste(x, ".csv", sep = ""))
 }
+
+
+#' Flags the first time and event occurs
+#' 
+#' Returns an indicator variable for the first time a condition is met in a 
+#' dataframe. Useful for tagging when an event started or ended in a panel dataset.
+#' 
+#' @param var column name on which you wish to run funciton
+#' @param value value for which you are searching for first occurence
+#' @keywords internal
+#' 
+
+first_time_flag <- function(var, value) {
+  dplyr::if_else((var == value) & (cumsum(var == value) == 1), 1, 0)
+}
+
