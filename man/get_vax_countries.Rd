@@ -2,21 +2,32 @@
 % Please edit documentation in R/get_vax_countries.R
 \name{get_vax_countries}
 \alias{get_vax_countries}
-\title{Pull list of countries for which vax data exist}
+\title{Import Our World in Data Vaccine rates
+
+Pull list of countries for which vax data exist}
 \usage{
-get_vax_countries(url = owid_vax_url)
+get_vax_countries(pepfar_only = TRUE)
 }
 \arguments{
-\item{url}{what is the url for the github repo containing vax info by country}
+\item{pepfar_only}{pepfar_only limit to just PEPFAR countries, default = TRUE}
 }
-\description{
+\value{
 Returns an object of the countries being tracked by Our World in Data
 }
-\details{
+\description{
 Import Our World in Data Vaccine rates
 }
 \examples{
 \dontrun{
-vax_list <- get_vax_countries(url)
+#all countries
+  cntry_list <- get_vax_countries()
+  df_vax <- get_vax_data(cntry_list)
+#pepfar only countries
+  cntry_list <- get_vax_countries()
 }
 }
+\seealso{
+Other vax: 
+\code{\link{get_vax_data}()}
+}
+\concept{vax}

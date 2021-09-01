@@ -7,7 +7,11 @@
 get_vax_data(cntry)
 }
 \arguments{
-\item{cntry}{list of countries that appear in the our world in data page (ends in .csv)}
+\item{cntry}{country, or list of countries, that appear in the our world in
+data page}
+}
+\value{
+Returns data frame of total vaccinations
 }
 \description{
 Retrieves COVID-19 vaccination data for a given list of countries
@@ -17,6 +21,18 @@ Import OWID vaccine data
 }
 \examples{
 \dontrun{
-zmb <- get_vax_data(cntry = "Zambia.csv")
+#only one country
+  df_vax_zmb <- get_vax_data("Zambia")
+#only PEPFAR countries
+  cntry_list <- get_vax_countries()
+  df_vax_pepfar <- get_vax_data(cntry_list)
+#all countries
+  cntry_list <- get_vax_countries(pepfar_only = FALSE)
+  df_vax <- get_vax_data(cntry_list)
 }
 }
+\seealso{
+Other vax: 
+\code{\link{get_vax_countries}()}
+}
+\concept{vax}
