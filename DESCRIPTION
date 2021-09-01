@@ -29,10 +29,13 @@ Imports:
     ggplot2,
     markdown,
     zoo
+Remotes:
+    USAID-OHA-SI/glamr
 Suggests: 
     rmarkdown,
     knitr,
-    spelling
+    spelling,
+    qpdf
 Language: en-US
 VignetteBuilder: knitr
 Depends: 
