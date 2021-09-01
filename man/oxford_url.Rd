@@ -16,4 +16,4 @@ API base
 \details{
 Oxford COVID-19 Government Response Tracker (Stringency Index)
 }
-\keyword{datasets}
+\keyword{internal}

@@ -13,4 +13,4 @@ tsRecov
 \description{
 link to covid recoveries
 }
-\keyword{datasets}
+\keyword{internal}

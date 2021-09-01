@@ -13,4 +13,4 @@ tsDeaths
 \description{
 link to covid deaths
 }
-\keyword{datasets}
+\keyword{internal}

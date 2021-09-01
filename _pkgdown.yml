@@ -1,0 +1,48 @@
+navbar:
+  structure:
+    left:
+    - home
+    - intro
+    - reference
+    - articles
+    - tutorials
+    - news
+    right: github
+  components:
+    home:
+      icon: fas fa-home fa-lg
+      href: index.html
+    reference:
+      text: Reference
+      href: reference/index.html
+    news:
+      text: Changelog
+      href: news/index.html
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/USAID-OHA-SI/COVIDutilities/
+    articles:
+      text: Articles
+      menu:
+      - text: How to fetch COVID vaccine data
+        href: articles/How-to-fetch-COVID-vaccine-data.html
+
+reference:
+- title: All functions
+  contents:
+  - '`get_vax_countries`'
+  - '`get_vax_data`'
+  - '`hdx_govmes_linkid`'
+  - '`hdx_govmes_url`'
+  - '`jhuRepo`'
+  - '`owid_vax_url`'
+  - '`oxford_url`'
+  - '`pepfar_iso_map`'
+  - '`pull_covid_gov_measures`'
+  - '`pull_jhu_covid`'
+  - '`pull_stringency_index`'
+  - '`tsCases`'
+  - '`tsDeaths`'
+  - '`tsRecov`'
+  - '`who_pandemic`'
+

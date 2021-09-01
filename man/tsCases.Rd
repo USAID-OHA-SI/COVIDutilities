@@ -13,4 +13,4 @@ tsCases
 \description{
 link to confirmed covid cases
 }
-\keyword{datasets}
+\keyword{internal}

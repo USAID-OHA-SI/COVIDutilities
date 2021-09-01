@@ -13,4 +13,4 @@ hdx_govmes_url
 \description{
 Excel file of government measures taken by diffferent countries
 }
-\keyword{datasets}
+\keyword{internal}
