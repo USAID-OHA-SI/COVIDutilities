@@ -17,3 +17,4 @@ Import John's Hopkins COVID-19 data
 cases <- import_jhu("cases")
 }
 }
+\keyword{internal}

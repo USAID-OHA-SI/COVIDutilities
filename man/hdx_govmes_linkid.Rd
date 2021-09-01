@@ -11,10 +11,10 @@ An object of class \code{character} of length 1.
 hdx_govmes_linkid
 }
 \description{
-Excel file of government measures taken by diffferent countries
+Excel file of government measures taken by different countries
 }
 \examples{
 \dontrun{
 glamr::extract_excel_data(hdx_govmes_url, hdx_govmes_url, 2, 'xlsx') }
 }
-\keyword{datasets}
+\keyword{internal}

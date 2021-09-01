@@ -1,7 +1,7 @@
 #' Import John's Hopkins COVID-19 data
 #'
 #' @param type what dataset do you want returned? cases, recoveries or deaths
-#' @export 
+#' @keywords internal
 #' @examples
 #' \dontrun{
 #' cases <- import_jhu("cases")

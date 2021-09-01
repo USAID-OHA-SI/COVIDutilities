@@ -3,13 +3,22 @@
 \name{pull_stringency_index}
 \alias{pull_stringency_index}
 \title{Pull Oxford Stringency Index}
+\source{
+\url{https://covidtracker.bsg.ox.ac.uk/about-api}
+}
 \usage{
-pull_stringency_index(date_start = "2020-01-22", date_end = NULL)
+pull_stringency_index(
+  date_start = "2020-01-22",
+  date_end = NULL,
+  pepfar_only = TRUE
+)
 }
 \arguments{
 \item{date_start}{start date for stringency index as yyyy-mm-dd, default/min is Jan 22, 2020}
 
 \item{date_end}{end date for stringency index as yyyy-mm-dd, default is NULL which will run through today}
+
+\item{pepfar_only}{limit to just PEPFAR countries, default = TRUE}
 }
 \value{
 dataframe of all PEPFAR countries and their stringency index value by day

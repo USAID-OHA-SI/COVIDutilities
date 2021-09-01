@@ -13,4 +13,4 @@ owid_vax_url
 \description{
 link to vaccination data main folder
 }
-\keyword{datasets}
+\keyword{internal}

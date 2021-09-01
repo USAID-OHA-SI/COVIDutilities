@@ -1,11 +1,12 @@
-#' Pull a tidy version of JHU COVID-19 data
-#'
-#'
-#' @title Pull JHU Covid-19 Data
-#' @description Returns a tidy data frame of JHU COVID-19 data. Returns data frame with colums for
-#' COVID-19 confirmed cases, recoveries and deaths.
+#' Pull JHU COVID-19 Case, Recovery, and Death Data
+#' 
+#' %>% Returns a tidy data frame of JHU COVID-19 data. Returns a tidy 
+#' data frame with columns for COVID-19 confirmed cases, recoveries and deaths.
+#' 
 #' @param pepfar_only limit to just PEPFAR countries, default = TRUE
 #' @export
+#' 
+#' @source \url{https://github.com/CSSEGISandData/COVID-19/}
 #'
 #' @examples
 #' \dontrun{

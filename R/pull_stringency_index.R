@@ -9,15 +9,18 @@
 #'
 #' @param date_start start date for stringency index as yyyy-mm-dd, default/min is Jan 22, 2020
 #' @param date_end end date for stringency index as yyyy-mm-dd, default is NULL which will run through today
+#' @param pepfar_only limit to just PEPFAR countries, default = TRUE 
 #'
 #' @return dataframe of all PEPFAR countries and their stringency index value by day
 #' @export
+#' 
+#' @source \url{https://covidtracker.bsg.ox.ac.uk/about-api}
 #'
 #' @examples
 #' \dontrun{
 #' df_stringency <- pull_stringency_index(date_end = "2021-04-01") }
 
-pull_stringency_index <- function(date_start = "2020-01-22", date_end = NULL){
+pull_stringency_index <- function(date_start = "2020-01-22", date_end = NULL, pepfar_only = TRUE){
   
   #apply today's date if left null
   if(is.null(date_end))
@@ -85,8 +88,8 @@ pull_stringency_index <- function(date_start = "2020-01-22", date_end = NULL){
                   color = factor(color, c("#D9CDC3", "#D3E8F0","#FAE1AF", "#FDAC7A", "#F6736B", "#DA3C6A", "#A90773")))
   
   #filter to PEPFAR countries & name
-  df_stringency <- df_stringency %>% 
-    dplyr::right_join(pepfar_iso_map, by = "iso")
+  if(pepfar_only == TRUE)
+    df_stringency <- dplyr::right_join(df_stringency, pepfar_iso_map, by = "iso")
   
   #order vars
   df_stringency <- df_stringency %>% 
