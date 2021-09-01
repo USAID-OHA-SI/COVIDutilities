@@ -4,7 +4,7 @@
 #' @param cntry country, or list of countries, that appear in the our world in 
 #'   data page
 #' @family vax
-#' @return Returns data frame of total vaccinations  
+#' @return Returns data frame of total vaccinations by day  
 #' @export 
 #' @examples
 #' \dontrun{
