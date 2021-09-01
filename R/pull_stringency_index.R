@@ -87,7 +87,7 @@ pull_stringency_index <- function(date_start = "2020-01-22", date_end = NULL, pe
   
   #filter to PEPFAR countries & name
   if(pepfar_only == TRUE)
-    %>% df_stringency <- dplyr::right_join(df_stringency, pepfar_iso_map, by = "iso")
+    df_stringency <- dplyr::right_join(df_stringency, pepfar_iso_map, by = "iso")
   
   #order vars
   df_stringency <- df_stringency %>% 
