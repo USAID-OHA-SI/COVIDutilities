@@ -20,7 +20,6 @@ make_url <- function(x) {
 #' Helper function to check if list of countries needs .csv added at the end or not
 #' @param x object to which you want to add .csv to the end of
 #' @keywords internal
-#' @export 
 #' @examples
 #' \dontrun{
 #' add_csv_stub(c("Zambia", "Zambia.csv"))
