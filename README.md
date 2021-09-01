@@ -14,7 +14,7 @@ The COVIDutilities package allows users to access the following data
 
   * Case counts, recoveries, deaths - Johns Hopkins (GitHub)
   * Vaccinations - Our World In Data (GitHub)
-  * Stringency index - Blavatnik School of Government (API)
+  * Stringency index - Oxford Blavatnik School of Government (API)
   * Government Measures - UN OCHA Humanitarian Data Exchange (Excel Download)
 
 ## Installation
