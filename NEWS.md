@@ -1,4 +1,5 @@
 # COVIDutilities 1.1.0
+*remove COVID related urls from exports
 
 # COVIDutilities 1.0.0
 * add `pull_stringency_index()` to pull Oxford stringency data
