@@ -24,8 +24,9 @@ get_vax_countries <- function(pepfar_only = TRUE) {
   cntry_obj <- 
     rvest::read_html(owid_vax_url) %>% 
     rvest::html_nodes(xpath = '//*[@class = "js-navigation-open Link--primary"]') %>% 
-    xml2::xml_text() %>% 
-    stringr::str_remove("\\.csv$")
+    xml2::xml_text() 
+  
+  cntry_obj <- gsub('.{4}$', '', cntry_obj)
   
   if(pepfar_only == TRUE)
     cntry_obj <-

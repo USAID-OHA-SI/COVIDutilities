@@ -11,7 +11,7 @@ get_vax_data(cntry)
 data page}
 }
 \value{
-Returns data frame of total vaccinations
+Returns data frame of total vaccinations by day
 }
 \description{
 Retrieves COVID-19 vaccination data for a given list of countries
