@@ -1,8 +1,8 @@
-pandoc: 2.11.4
+pandoc: 2.7.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   How-to-fetch-COVID-vaccine-data: How-to-fetch-COVID-vaccine-data.html
   using-covid-data: using-covid-data.html
-last_built: 2021-09-01T21:24Z
+last_built: 2021-09-22T19:01Z
 
