@@ -26,6 +26,7 @@ tsDeaths <- "csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_de
 
 #' @title  HDX COVID-19 government measures
 #' @description Excel file of government measures taken by diffferent countries
+#' @export
 #' @keywords internal
 hdx_govmes_url <- "https://data.humdata.org/dataset/acaps-covid19-government-measures-dataset"
 
