@@ -140,7 +140,7 @@
 <span class="co">#&gt; See help("Deprecated")</span>
 
 <span class="fu">glimpse</span><span class="op">(</span><span class="va">df_vax</span><span class="op">)</span>
-<span class="co">#&gt; Rows: 5,676</span>
+<span class="co">#&gt; Rows: 6,636</span>
 <span class="co">#&gt; Columns: 8</span>
 <span class="co">#&gt; $ countryname             &lt;chr&gt; "Angola", "Angola", "Angola", "Angola", "Angol~</span>
 <span class="co">#&gt; $ date                    &lt;date&gt; 2021-03-01, 2021-03-08, 2021-03-18, 2021-03-2~</span>
@@ -157,7 +157,7 @@
 <span class="co">#&gt; Use 'pull_vax_data' instead.</span>
 <span class="co">#&gt; See help("Deprecated")</span>
 <span class="fu">glimpse</span><span class="op">(</span><span class="va">df_vax_pepfar</span><span class="op">)</span>
-<span class="co">#&gt; Rows: 862</span>
+<span class="co">#&gt; Rows: 987</span>
 <span class="co">#&gt; Columns: 8</span>
 <span class="co">#&gt; $ countryname             &lt;chr&gt; "Zambia", "Zambia", "Zambia", "Zambia", "Zambi~</span>
 <span class="co">#&gt; $ date                    &lt;date&gt; 2021-04-14, 2021-04-15, 2021-04-18, 2021-04-1~</span>
@@ -166,7 +166,7 @@
 <span class="co">#&gt; $ total_vaccinations      &lt;dbl&gt; 0, 106, 1316, 2114, 3391, 9006, 12543, 14012, ~</span>
 <span class="co">#&gt; $ people_vaccinated       &lt;dbl&gt; 0, 106, 1316, 2114, 3391, 9006, 12543, 14012, ~</span>
 <span class="co">#&gt; $ people_fully_vaccinated &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0~</span>
-<span class="co">#&gt; $ total_boosters          &lt;lgl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~</span></code></pre></div>
+<span class="co">#&gt; $ total_boosters          &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~</span></code></pre></div>
 <p>We can plot the data it to get a sense of what is going on in each country.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">df_vax_pepfar</span> <span class="op">%&gt;%</span> 
