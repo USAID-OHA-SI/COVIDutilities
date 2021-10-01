@@ -28,14 +28,19 @@ Imports:
     scales,
     ggplot2,
     markdown,
-    zoo
+    zoo, 
+    tidyverse, 
+    lubridate
 Remotes:
-    USAID-OHA-SI/glamr
+    USAID-OHA-SI/glamr,
+    USAID-OHA-SI/glitr,
+    USAID-OHA-SI/gophr
 Suggests: 
     rmarkdown,
     knitr,
     spelling,
-    qpdf
+    qpdf,
+    extrafont
 Language: en-US
 VignetteBuilder: knitr
 Depends: 

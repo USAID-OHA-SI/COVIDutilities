@@ -32,7 +32,7 @@ This vignette provides best practices for fetching COVID-19 vaccine data from Ou
 
 We have updated `COVIDutilities` package with functionality to download vaccine data. Two new functions drive the process.
 
-```{r get country list}
+```{r get_country_list}
 # The function below fetches a list of countries for which vaccine data is available
 get_vax_countries() %>% head(15)
 
@@ -45,7 +45,7 @@ cat(paste("\n", "Number of countries with vaccine data available: ", length(cntr
 
 With a valid list of countries, we can turn our attention to extracting a data frame with the actual vaccine data. To accomplish this we will make use of the `get_vax_data()` function. The function requires a character object
 
-```{r get vaccine data}
+```{r get_vaccine_data}
 # Fetch all vaccine data (takes a bit to run)
 df_vax <- get_vax_data(cntry_list)
 
@@ -62,7 +62,7 @@ glimpse(df_vax_pepfar)
 
 We can plot the data it to get a sense of what is going on in each country.
 
-```{r plot vaccines, warning = F, dpi = 90}
+```{r plot_vaccines, warning = F, dpi = 90}
 df_vax_pepfar %>% 
   ggplot(aes(x = date)) +
   geom_area(aes(y = people_vaccinated), fill = "#7ecfc0") +
