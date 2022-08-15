@@ -1,4 +1,5 @@
 # COVIDutilities 1.1.0
+* Add package check from `gagglr` [2022-08-15]
 * build site via `pkgdown`
 * created the `using-covid-data` vignette to demonstrate importing COVID data and the stringency index.
 * rename `get_vax_data` to `pull_vax_data` to match other functions.
